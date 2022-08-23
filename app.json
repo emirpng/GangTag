@@ -1,0 +1,35 @@
+{
+      "name": "RiviaTagger bot",
+      "description": "RiviaTagger",
+      "keywords": [
+         "telegram",
+         "tagger",
+         "group",
+         "riviatag",
+         "riviabots"
+      ],   
+   "repository": "https://github.com/emirpng/RiviaTagger",
+   "env": {
+      "TOKEN": {
+         "description": "Botunuzun tokenini buraya girin.",
+         "value": ""
+      },
+      "APP_ID": {
+         "description": "my.telegram.org adresinden aldığınız APP ID girin.",
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "my.telegram.org adresinden aldığınız API HASH girin.",
+         "value": ""
+      },
+      "USERNAME": {
+         "description": "Botun kullanıcı adını girin '@' işareti olmadan.",
+         "value": "riviatag_bot"
+      },
+      "startmesaj": {
+         "description": "Bota özelden start verilince gönderilecek mesaj girin.",
+         "value": "**Ben grubunuzdaki üyeleri etiketleyebilen bir botum. Beni grubunuza alıp çalıştırabilirsiniz.**\n\n**Komutlar için /help yazın.**"
+      }
+     
+   }
+ }
