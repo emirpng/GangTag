@@ -47,55 +47,6 @@ async def start(event):
 
 
 
-@client.on(events.NewMessage(pattern="ADMİN"))
-async def start(event):
-  if event.is_group:
-    async for usr in client.iter_participants(event.chat_id):
-     nur = f"[ᑎᑌᖇᔕᗩᗷᗩᕼ..🌸](tg://user?id=5397935857) "
-     jigg = f"[JİGGLYPUFF ♫ ツ](tg://user?id=976049155) "
-     gri = f"[‘gri..](tg://user?id=1420106463) "
-     sirine = f"[Ş𝖎𝖗𝖎𝖓𝖊](tg://user?id=1519664807) "
-     dilemma = f"[𝕯𝖎𝖑𝖊𝖒𝖒𝖆](tg://user?id=5247541181) "
-     return await event.reply(f"**Adminler:**\n👨🏻‍💻 {gri}\n👩🏼‍💻 {dilemma} - {nur}\n👩🏼‍💻 {jigg} - {sirine}")
-
-
-@client.on(events.NewMessage(pattern="Admin"))
-async def start(event):
-  if event.is_group:
-    async for usr in client.iter_participants(event.chat_id):
-     nur = f"[ᑎᑌᖇᔕᗩᗷᗩᕼ..🌸](tg://user?id=5397935857) "
-     jigg = f"[JİGGLYPUFF ♫ ツ](tg://user?id=976049155) "
-     gri = f"[‘gri..](tg://user?id=1420106463) "
-     sirine = f"[Ş𝖎𝖗𝖎𝖓𝖊](tg://user?id=1519664807) "
-     dilemma = f"[𝕯𝖎𝖑𝖊𝖒𝖒𝖆](tg://user?id=5247541181) "
-     return await event.reply(f"**Adminler:**\n👨🏻‍💻 {gri}\n👩🏼‍💻 {dilemma} - {nur}\n👩🏼‍💻 {jigg} - {sirine}")
-
-
-@client.on(events.NewMessage(pattern="admin"))
-async def start(event):
-  if event.is_group:
-    async for usr in client.iter_participants(event.chat_id):
-     nur = f"[ᑎᑌᖇᔕᗩᗷᗩᕼ..🌸](tg://user?id=5397935857) "
-     jigg = f"[JİGGLYPUFF ♫ ツ](tg://user?id=976049155) "
-     gri = f"[‘gri..](tg://user?id=1420106463) "
-     sirine = f"[Ş𝖎𝖗𝖎𝖓𝖊](tg://user?id=1519664807) "
-     dilemma = f"[𝕯𝖎𝖑𝖊𝖒𝖒𝖆](tg://user?id=5247541181) "
-     return await event.reply(f"**Adminler:**\n👨🏻‍💻 {gri}\n👩🏼‍💻 {dilemma} - {nur}\n👩🏼‍💻 {jigg} - {sirine}")
-
-
-
-@client.on(events.NewMessage(pattern="Yönetici|yönetici"))
-async def start(event):
-  if event.is_group:
-    async for usr in client.iter_participants(event.chat_id):
-     nur = f"[ᑎᑌᖇᔕᗩᗷᗩᕼ..🌸](tg://user?id=5397935857) "
-     jigg = f"[JİGGLYPUFF ♫ ツ](tg://user?id=976049155) "
-     gri = f"[‘gri..](tg://user?id=1420106463) "
-     sirine = f"[Ş𝖎𝖗𝖎𝖓𝖊](tg://user?id=1519664807) "
-     dilemma = f"[𝕯𝖎𝖑𝖊𝖒𝖒𝖆](tg://user?id=5247541181) "
-     return await event.reply(f"**Adminler:**\n👨🏻‍💻 {gri}\n👩🏼‍💻 {dilemma} - {nur}\n👩🏼‍💻 {jigg} - {sirine}")
-
-
 
 
 @client.on(events.NewMessage(pattern="^/spm ?(.*)"))
