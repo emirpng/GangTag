@@ -42,7 +42,17 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.reply(f"{startmesaj}")
+     await event.reply(f"{startmesaj}"
+                    buttons=(
+                      [
+                       Button.url('✧𝑮𝑨𝑵𝑮𝑨𝑳𝑨𝑹 𝑨𝑷𝑨𝑹𝑻𝑴𝑨𝑵𝑰✧', f'https://t.me/GangalarApartmanSohbetGrubu')
+                      ],
+                      [
+                       Button.url('𝐊𝐏𝐒𝐒/𝐀𝐋𝐄𝐒 𝐆𝐀𝐍𝐆𝐀𝐋𝐀𝐑 𝐆𝐑𝐔𝐁𝐔', f'https://t.me/+02GeL9wmm4EwMmMx')
+                      ],
+                    ),
+                    link_preview=False
+                   )
 
 
 
