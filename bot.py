@@ -161,20 +161,21 @@ async def mentionall(event):
     async for usr in client.iter_participants(event.chat_id, aggressive=False):
       rxyzdev_tagTot[event.chat_id] += 1
       usrnum += 1
-      usrtxt += f"\n[{usr.first_name}](tg://user?id={usr.id}) "
+      usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+      sender = await event.get_sender()
+      gonderen = f"{sender.first_name}"
+      reply = await event.get_reply_message()
       if event.chat_id not in anlik_calisan:
         return
       if usrnum == 1:
-        await client.send_message(event.chat_id, usrtxt, reply_to=msg)
-        await asyncio.sleep(3)
+        await client.send_message(event.chat_id, f"{usrtxt}; \n\n{reply.message}\n\n{gonderen} Tarafından gönderildi.")
+        await asyncio.sleep(4)
         usrnum = 0
         usrtxt = ""
      
     sender = await event.get_sender()
     rxyzdev_initT = f"[{sender.first_name}](tg://user?id={sender.id})"      
     if event.chat_id in rxyzdev_tagTot:await event.respond(f"**✅ Etiket işlemi başarıyla tamamlandı.**\n\n**👥 Etiket Sayısı:** {rxyzdev_tagTot[event.chat_id]}\n**🗣 Etiket İşlemini Başlatan:** {rxyzdev_initT}")
-
-
 
 
 @client.on(events.NewMessage(pattern="^/utag ?(.*)"))
